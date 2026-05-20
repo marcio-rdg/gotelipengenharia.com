@@ -1,0 +1,157 @@
+@use 'variables'as *;
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light);
+
+    &:hover {
+        color: var(--secondary);
+        transition: 300ms all ease-in-out;
+    }
+}
+
+// Fontes
+@font-face {
+    font-family: 'Nunito';
+    src: url('/fonts/Nunito.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/fonts/Nunito-Italic.ttf') format('truetype');
+    font-weight: 100 1000;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ZenDots';
+    src: url('/fonts/ZenDots.ttf') format('truetype');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "ZenDots";
+
+    &.light {
+        color: var(--secondary);
+    }
+
+    &.dark {
+        color: var(--dark);
+    }
+}
+
+p,
+a,
+li {
+    font-family: "Nunito";
+    font-weight: 600;
+}
+
+// Sizes
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+p,
+li,
+a {
+    font-size: 1.6rem;
+
+    &.dark {
+        color: var(--primary);
+    }
+
+    &.light {
+        color: var(--light);
+    }
+}
+
+p {
+    span {
+        font-weight: 700;
+        color: var(--secondary);
+    }
+}
+
+section,
+header,
+footer {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        max-width: 1200px;
+        display: flex;
+        width: 100%;
+    }
+
+    &.bg-primary {
+        background-color: var(--primary);
+    }
+
+    &.bg-secondary {
+        background-color: var(--secondary);
+    }
+
+    &.bg-light {
+        background-color: var(--light);
+    }
+
+    &.bg-dark {
+        background-color: var(--dark);
+    }
+}
+
+small {
+    text-transform: uppercase;
+    font-family: "Nunito";
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary);
+}

@@ -1,0 +1,20 @@
+// Mapa
+$breakpoints: ('sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px);
+
+// Func Media Query
+@mixin respond-to($breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);
+
+    @if $value {
+        @media (max-width: $value) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Breakpoint #{$breakpoint} não encontrado.";
+    }
+}

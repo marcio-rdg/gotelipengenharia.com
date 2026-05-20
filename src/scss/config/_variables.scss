@@ -1,0 +1,29 @@
+@use "sass:color";
+
+//Gap
+$u1 : 4px;
+$u2 : 8px;
+$u3 : 12px;
+$u4 : 16px;
+$u5 : 24px;
+$u6 : 32px;
+$u7 : 48px;
+$u8 : 64px;
+$u9 : 80px;
+$u10 : 128px;
+
+//Colors
+$brand-primary: #23566D;
+$brand-secondary: #FFBD09;
+$assistant-dark: #173949;
+$assistant-light: #fff;
+
+:root {
+    --primary: #{$brand-primary};
+    --primary-t: #{color.adjust($brand-primary, $alpha: -0.9)};
+
+    --secondary: #{$brand-secondary};
+
+    --dark: #{$assistant-dark};
+    --light: #{$assistant-light};
+}

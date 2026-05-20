@@ -1,0 +1,60 @@
+@use '@/scss/config/variables'as *;
+
+.hero {
+    background-image: url("../../images/hero-bg-desktop.png");
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+
+    &__content {
+        display: flex;
+        flex: 1 1;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__img {
+        flex: 1 1;
+        display: flex;
+        align-items: end;
+
+        img {
+            height: 90%;
+        }
+    }
+
+    &__bold.dark {
+        color: var(--dark);
+        font-weight: 1000;
+        font-size: 1.8rem;
+        margin-top: $u5;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $u1;
+        margin-top: $u2;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 45%;
+
+        svg {
+            width: 1.6rem;
+            fill: red;
+        }
+
+        p {
+            color: red;
+            margin-left: $u2;
+        }
+    }
+
+    &__btn {
+        max-width: 50%;
+        margin-top: $u5;
+    }
+}

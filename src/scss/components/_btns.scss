@@ -1,0 +1,30 @@
+@use '@/scss/config/variables'as *;
+
+button {
+    font-family: "ZenDots";
+    font-size: 2rem;
+    border: none;
+    padding: $u2 $u6;
+    border-radius: $u1;
+    cursor: pointer;
+
+    &:active {
+        transform: scale(0.95);
+        filter: brightness(0.9);
+    }
+
+    &.light {
+        background-color: var(--secondary);
+        color: var(--dark);
+    }
+
+    &.dark {
+        background-color: var(--primary);
+        color: var(--light);
+    }
+
+    &.white {
+        background-color: var(--light);
+        color: var(--dark);
+    }
+}

@@ -1,0 +1,57 @@
+@use '@/scss/config/variables'as *;
+
+.navbar {
+    height: 8rem;
+    padding: $u4 0;
+
+    .container {
+        align-items: center;
+    }
+
+    &__case {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 0 $u5;
+    }
+
+    svg {
+        height: 80%;
+    }
+
+    &__link {
+        margin-left: $u5;
+
+        &.active {
+            color: var(--secondary);
+            position: relative;
+            cursor: default;
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom: -2px;
+                background-color: var(--secondary);
+                height: 2px;
+            }
+
+        }
+    }
+
+    &__cta {
+        font-size: 1.4rem;
+        transition: 300ms all ease-in-out;
+        padding-top: $u3;
+        padding-bottom: $u3;
+
+        &:hover {
+            color: var(--dark);
+            background-color: var(--secondary);
+        }
+    }
+}
