@@ -1,0 +1,62 @@
+@use '@/scss/config/variables'as *;
+@use '@/scss/config/mixins'as *;
+
+.method {
+    &__container {
+        flex-direction: column;
+        align-items: center;
+        padding: $u8 0;
+    }
+
+    &__content {
+        display: flex;
+
+        @include respond-to(lg) {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
+
+    &__steps {
+        display: flex;
+        flex-direction: column;
+        gap: $u4;
+        width: 50%;
+
+        @include respond-to(lg) {
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+
+    &__step {
+        display: flex;
+        flex-direction: column;
+
+        @include respond-to(lg) {
+            flex: 1;
+            min-width: 350px;
+        }
+    }
+
+    &__imgs {
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: $u3;
+
+        @include respond-to(lg) {
+            display: none;
+        }
+
+        .small {
+            max-width: 48%;
+        }
+
+        .large {
+            max-width: 100%;
+        }
+    }
+}

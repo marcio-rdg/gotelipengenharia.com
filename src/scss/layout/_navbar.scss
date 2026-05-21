@@ -1,4 +1,5 @@
 @use '@/scss/config/variables'as *;
+@use '@/scss/config/mixins'as *;
 
 .navbar {
     height: 8rem;
@@ -6,6 +7,10 @@
 
     .container {
         align-items: center;
+
+        @include respond-to(md) {
+            justify-content: center;
+        }
     }
 
     &__case {
@@ -15,10 +20,18 @@
         justify-content: end;
         align-items: center;
         padding: 0 $u5;
+
+        @include respond-to(md) {
+            display: none;
+        }
     }
 
     svg {
         height: 80%;
+
+        @include respond-to(md) {
+            width: fit-content;
+        }
     }
 
     &__link {
@@ -49,9 +62,14 @@
         padding-top: $u3;
         padding-bottom: $u3;
 
+        @include respond-to(md) {
+            display: none;
+        }
+
         &:hover {
             color: var(--dark);
-            background-color: var(--secondary);
+            background-color: var(--secondary) !important;
         }
     }
+
 }

@@ -1,0 +1,55 @@
+@use '@/scss/config/variables'as *;
+
+.faq {
+
+    &__container {
+        flex-direction: column;
+        align-items: center;
+        padding: $u8 0;
+        padding-top: $u1;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: $u1;
+        margin-top: $u5;
+    }
+
+    &__question {
+        background-color: var(--primary);
+        padding: $u5;
+        border-radius: $u2;
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+
+        &::after {
+            content: "+";
+            position: absolute;
+            right: $u5;
+            top: $u4;
+            font-size: 2rem;
+            font-family: "Nunito";
+            font-weight: 1000;
+            color: var(--light);
+        }
+
+        p,
+        span {
+            display: none;
+        }
+
+        &.active {
+            &::after {
+                content: "-";
+            }
+
+            p,
+            span {
+                display: block;
+            }
+        }
+    }
+}

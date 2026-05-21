@@ -1,0 +1,68 @@
+@use '@/scss/config/variables'as *;
+
+.footer {
+    &__container {
+        flex-direction: column;
+        align-items: center;
+        padding: $u8 0;
+
+        span.line {
+            margin: $u6 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__contact,
+    &__address,
+    &__social {
+        flex: 1 1;
+        display: flex;
+        flex-direction: column;
+        gap: $u1;
+    }
+
+    &__address {
+        &__title {
+            font-size: 2.2rem;
+            font-weight: 1000;
+        }
+    }
+
+
+    &__contact {
+        &__title {
+            font-size: 2.2rem;
+            font-weight: 1000;
+        }
+    }
+
+    &__social {
+
+        &__title {
+            font-size: 2.2rem;
+            font-weight: 1000;
+        }
+
+        &__links {
+            display: flex;
+            gap: $u2;
+        }
+
+        svg {
+            width: 2.4rem;
+            height: 2.4rem;
+            fill: var(--light) !important;
+
+            &:hover {
+                filter: drop-shadow(#fff 0 0 1px);
+            }
+        }
+    }
+
+    &__dev a {
+        color: var(--secondary);
+    }
+}

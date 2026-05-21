@@ -1,0 +1,28 @@
+@use '@/scss/config/variables'as *;
+
+.solutions {
+    &__container {
+        flex-direction: column;
+        align-items: center;
+        padding: $u8 0;
+    }
+
+    &__content-imgs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: $u3;
+        margin-top: $u4;
+        margin-bottom: $u4;
+
+        a {
+            flex: 1 1;
+            min-width: 400px;
+        }
+
+        img {
+            border-radius: $u2;
+            width: 100%;
+        }
+    }
+}

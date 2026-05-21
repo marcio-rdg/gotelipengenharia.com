@@ -5,7 +5,8 @@ span.line {
     display: block;
     background-color: var(--light);
     height: 1px;
-    opacity: 50%;
+    opacity: 10%;
+    margin: $u4 0;
 }
 
 div.line {

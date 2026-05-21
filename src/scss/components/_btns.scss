@@ -4,7 +4,7 @@ button {
     font-family: "ZenDots";
     font-size: 2rem;
     border: none;
-    padding: $u2 $u6;
+    padding: $u3 $u6;
     border-radius: $u1;
     cursor: pointer;
 
@@ -16,6 +16,12 @@ button {
     &.light {
         background-color: var(--secondary);
         color: var(--dark);
+        transition: 300ms all ease-in-out;
+
+        &:hover {
+            background-color: var(--dark);
+            color: var(--light);
+        }
     }
 
     &.dark {
@@ -26,5 +32,11 @@ button {
     &.white {
         background-color: var(--light);
         color: var(--dark);
+        transition: 300ms all ease-in-out;
+
+        &:hover {
+            background-color: var(--dark);
+            color: var(--light);
+        }
     }
 }
