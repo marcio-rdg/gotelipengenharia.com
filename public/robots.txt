@@ -1,19 +1,6 @@
 User-agent: *
 Allow: /
+Allow: /pages/
+Allow: /src/
 
-Disallow: /obrigado.html
-Disallow: /thank-you.html
-Disallow: /upsell.html
-
-Disallow: /cgi-bin/
-Disallow: /admin/
-
-Disallow: /*?*
-
-Sitemap: https://www.marciordg.com/sitemap.xml
-
-User-agent: AdsBot-Google
-Allow: /
-
-User-agent: AdsBot-Google-Mobile
-Allow: /
+Sitemap: https://gotelipengenharia.com//sitemap.xml

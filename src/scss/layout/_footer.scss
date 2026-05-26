@@ -1,4 +1,5 @@
 @use '@/scss/config/variables'as *;
+@use '@/scss/config/mixins'as *;
 
 .footer {
     &__container {
@@ -13,6 +14,12 @@
 
     &__content {
         display: flex;
+
+        @include respond-to(md) {
+            flex-direction: column;
+            align-items: center;
+            gap: $u5;
+        }
     }
 
     &__contact,
@@ -22,6 +29,10 @@
         display: flex;
         flex-direction: column;
         gap: $u1;
+
+        @include respond-to(md) {
+            text-align: center;
+        }
     }
 
     &__address {
@@ -49,6 +60,10 @@
         &__links {
             display: flex;
             gap: $u2;
+
+            @include respond-to(md) {
+                justify-content: center;
+            }
         }
 
         svg {

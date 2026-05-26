@@ -1,0 +1,47 @@
+@use '@/scss/config/variables'as *;
+@use '@/scss/config/mixins'as *;
+
+.extras {
+    padding: $u8 0;
+
+    &__container {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: $u3;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        gap: $u1;
+    }
+
+    &__item {
+        flex: 1 1;
+        min-width: 300px;
+        background-color: var(--primary);
+        padding: $u4;
+        border-radius: $u1;
+
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: $u3;
+            height: 100%;
+        }
+
+        p {
+            font-size: 2rem;
+            text-align: start;
+        }
+
+        svg {
+            width: 3rem;
+            height: 3rem;
+            fill: var(--light);
+        }
+    }
+}

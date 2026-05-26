@@ -3,254 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gotelip Engenharia</title>
+    <title>Gotelip Engenharia | Projetos de Incêndio e AVCB</title>
+    <meta
+      name="description"
+      content="Proteja seu patrimônio. Especialistas em segurança contra incêndio, brigada e aprovação de AVCB. Evite multas e garanta a regularização da sua obra hoje."
+    />
+    <link
+      rel="preload"
+      href="/fonts/ZenDots.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/Nunito.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
     <link rel="shortcut icon" href="favicon.svg" type="image/svg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EngineeringService",
+        "name": "Gotelip Engenharia",
+        "description": "Especialista em Engenharia de Prevenção e Combate a Incêndio, elaboração de Projetos Técnicos e aprovação de AVCB.",
+        "url": "https://www.aylagotelipengenharia.com.br",
+        "telephone": "+55-33-99145-6937",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "R. Crisolino Ferreira da Costa, 145 - Castanheiras",
+          "addressLocality": "Governador Valadares",
+          "addressRegion": "MG",
+          "postalCode": "35054-767",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -18.8711,
+          "longitude": -41.9614
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        "areaServed": "Governador Valadares e região"
+      }
+    </script>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gotelipengenharia.com/" />
+    <meta
+      property="og:title"
+      content="Gotelip Engenharia | Projetos de Incêndio e AVCB"
+    />
+    <meta
+      property="og:description"
+      content="Garanta a segurança e regularização da sua empresa. Projetos de combate a incêndio, brigada e AVCB com especialistas."
+    />
+    <meta
+      property="og:image"
+      content="https://gotelipengenharia.com/images/hero-bg-desktop.webp"
+    />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://gotelipengenharia.com/" />
+    <meta
+      property="twitter:title"
+      content="Gotelip Engenharia | Projetos de Incêndio e AVCB"
+    />
+    <meta
+      property="twitter:description"
+      content="Garanta a segurança e regularização da sua empresa. Projetos de combate a incêndio, brigada e AVCB com especialistas."
+    />
+    <meta
+      property="twitter:image"
+      content="https://gotelipengenharia.com/images/hero-bg-desktop.webp"
+    />
   </head>
   <body>
     <header class="navbar bg-dark">
       <div class="container">
         <svg-load name="logo-marca" />
         <nav class="navbar__case">
-          <a href="#" class="navbar__link active">Início</a>
-          <a href="#" class="navbar__link">Sobre Nós</a>
-          <a href="#" class="navbar__link">Orçamentos</a>
+          <a href="/" data-page="home" class="navbar__link active">Início</a>
+          <a href="/aboutus" data-page="aboutus" class="navbar__link"
+            >Sobre Nós</a
+          >
+          <a href="/services" data-page="services" class="navbar__link"
+            >Orçamentos</a
+          >
         </nav>
-        <a href=""
-          ><button class="white navbar__cta">Fale com Especialista</button>
+        <a
+          href="https://wa.me/553391456937"
+          target="_blank"
+          class="navbar__cta-link"
+          aria-label="Entrar em contato diretamente com Ayla."
+        >
+          <button class="white navbar__cta">Fale com Especialista</button>
         </a>
+        <button class="menu-nav">☰</button>
       </div>
     </header>
-    <main>
-      <section class="hero light">
-        <div class="hero__container container">
-          <div class="hero__content">
-            <h1 class="hero__title dark">
-              Evite multas e interdições: proteja vidas e o seu patrimônio.
-            </h1>
-            <p class="hero__subtitle dark">
-              Regularize com quem entende e elimine risco iminente na sua
-              edificação.
-            </p>
 
-            <p class="dark hero__bold">O perigo é real:</p>
+    <main id="content"></main>
 
-            <ul class="hero__list">
-              <li class="hero__item">
-                <svg-load name="perigo" />
-                <p>Multas elevadas</p>
-              </li>
-              <li class="hero__item">
-                <svg-load name="perigo" />
-                <p>Problemas com seguro</p>
-              </li>
-              <li class="hero__item">
-                <svg-load name="perigo" />
-                <p>Paralisação das atividades</p>
-              </li>
-              <li class="hero__item">
-                <svg-load name="perigo" />
-                <p>Responsabilidade Civil e criminal</p>
-              </li>
-            </ul>
-            <a class="hero__link" href=""
-              ><button class="light hero__btn">Ver soluções</button></a
-            >
-          </div>
-          <div class="hero__img">
-            <img
-              src="./images/ayla.png"
-              alt="Foto da Engenheira Ayla Gotelop, com capacete. Segurando uma prancheta vermelha e uma caneta bic."
-            />
-          </div>
-        </div>
-      </section>
-      <div class="line"></div>
-      <section class="solutions light">
-        <div class="container solutions__container">
-          <small class="dark">Serviços</small>
-          <h2 class="dark">Nossas Soluções em Segurança</h2>
-          <p class="dark">
-            Da elaboração do projeto à aprovação final, garantimos proteção
-            total para edifícios e indústrias.
-          </p>
-          <div class="solutions__content-imgs">
-            <a href="">
-              <img
-                src="./images/service-consultoria.png"
-                alt="Serviços de Consultoria de Riscos."
-              />
-            </a>
-            <a href="">
-              <img
-                src="./images/service-projetos.png"
-                alt="Serviços de Projetos de Prevenção e Combate a Incêndio."
-              />
-            </a>
-            <a href="">
-              <img
-                src="./images/service-brigada.png"
-                alt="Treinamento de Brigada."
-              />
-            </a>
-            <a href="">
-              <img src="./images/service-inss.png" alt="INSS de obras." />
-            </a>
-          </div>
-          <a href="">
-            <button class="light">Entrar em Contato</button>
-          </a>
-        </div>
-      </section>
-      <section class="method bg-dark">
-        <div class="method__container container">
-          <small class="light">Método</small>
-          <h2 class="light">Como atuamos na sua empresa</h2>
-          <p class="light">
-            Um fluxo de trabalho rigoroso baseado em normas técnicas para
-            garantir a segurança máxima.
-          </p>
-          <span class="line"></span>
-          <div class="method__content">
-            <div class="method__steps">
-              <div class="method__step">
-                <small class="light">Passo 1</small>
-                <h3 class="light">Diagnóstico Inicial</h3>
-                <p class="light">
-                  Vistoria técnica para identificar as necessidades de proteção.
-                </p>
-              </div>
-              <div class="method__step">
-                <small class="light">Passo 2</small>
-                <h3 class="light">Planejamento Técnico</h3>
-                <p class="light">
-                  Elaboração de projetos e cálculos detalhados.
-                </p>
-              </div>
-              <div class="method__step">
-                <small class="light">Passo 3</small>
-                <h3 class="light">Execução do Projeto</h3>
-                <p class="light">
-                  Implementação rigorosa do planejamento com equipe
-                  especializada.
-                </p>
-              </div>
-              <div class="method__step">
-                <small class="light">Passo 4</small>
-                <h3 class="light">Aprovação e Entrega</h3>
-                <p class="light">Submissão aos órgãos competentes.</p>
-              </div>
-              <div class="method__step">
-                <small class="light">Passo 5</small>
-                <h3 class="light">Manutenção</h3>
-                <p class="light">
-                  Monitoramento contínuo para manter a conformidade.
-                </p>
-              </div>
-            </div>
-            <div class="method__imgs">
-              <img
-                src="./images/step-img-1.png"
-                class="small"
-                alt="Detector de Fumaça."
-              />
-              <img
-                src="./images/step-img-2.png"
-                class="small"
-                alt="Placa de acrílico com a logo da Gotelip."
-              />
-              <img
-                src="./images/step-img-3.png"
-                class="large"
-                alt="Extintor de incêndio apagando fogo."
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="faq bg-dark">
-        <div class="faq__container container">
-          <h2 class="title light">Perguntas Frequentes</h2>
-          <div class="faq__content">
-            <div class="faq__question active">
-              <h4 class="faq__question__title light">Pergunta 1</h4>
-              <span class="line"></span>
-              <p class="light faq__question__response">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
-              </p>
-            </div>
-            <div class="faq__question">
-              <h4 class="faq__question__title light">Pergunta 2</h4>
-              <span class="line"></span>
-              <p class="light faq__question__response">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
-              </p>
-            </div>
-            <div class="faq__question">
-              <h4 class="faq__question__title light">Pergunta 3</h4>
-              <span class="line"></span>
-              <p class="light faq__question__response">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
-              </p>
-            </div>
-            <div class="faq__question">
-              <h4 class="faq__question__title light">Pergunta 4</h4>
-              <span class="line"></span>
-              <p class="light faq__question__response">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="cta bg-secondary">
-        <div class="container cta__container">
-          <h2 class="title dark">Proteja seu patrimônio e evite prejuízos.</h2>
-          <p class="dark">Não deixe a segurança para depois.</p>
-          <p class="dark">
-            Agende uma consultoria com nossos especialistas agora.
-          </p>
-          <a href="">
-            <button class="white">Tirar dúvidas</button>
-          </a>
-        </div>
-      </section>
-    </main>
     <footer class="bg-dark footer">
       <div class="footer__container container">
         <div class="footer__content">
@@ -260,21 +120,42 @@
               Especialista em Prevenção e Combate a Incêndio
             </p>
             <div class="footer__social__links">
-              <a href="" class="footer__social__link">
-                <svg-load name="facebook" />
-              </a>
-              <a href="" class="footer__social__link">
-                <svg-load name="instagram" />
-              </a>
-              <a href="" class="footer__social__link">
-                <svg-load name="linkedin" />
-              </a>
-              <a href="" class="footer__social__link">
-                <svg-load name="whatsapp" />
-              </a>
-              <a href="" class="footer__social__link">
-                <svg-load name="youtube" />
-              </a>
+              <a
+                href="https://www.facebook.com/gotelipengenharia"
+                class="footer__social__link"
+                target="_blank"
+                aria-label="Facebook da Gotelip."
+                ><svg-load name="facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/aylagotelip.eng/"
+                class="footer__social__link"
+                target="_blank"
+                aria-label="instagram da Gotelip."
+                ><svg-load name="instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/ayla-gotelip-ba3aab41/"
+                aria-label="Linkedin da Gotelip."
+                class="footer__social__link"
+                target="_blank"
+                ><svg-load name="linkedin"
+              /></a>
+              <a
+                href="https://wa.me/553391456937"
+                target="_blank"
+                class="footer__social__link"
+                target="_blank"
+                aria-label="Whatsapp da Gotelip."
+                ><svg-load name="whatsapp"
+              /></a>
+              <a
+                href="https://www.youtube.com/@AylaGotelip.eng1"
+                aria-label="Youtube da Gotelip."
+                class="footer__social__link"
+                target="_blank"
+                ><svg-load name="youtube"
+              /></a>
             </div>
           </div>
           <div class="footer__contact">
@@ -283,7 +164,10 @@
               Atendimento por hora marcada.
             </p>
             <p class="light">+55 33 99145-6937</p>
-            <a class="light" href="mailto:aylagotelip.eng@gmail.com"
+            <a
+              class="light"
+              target="_blank"
+              href="mailto:aylagotelip.eng@gmail.com"
               >aylagotelip.eng@gmail.com</a
             >
           </div>
@@ -297,9 +181,14 @@
           </div>
         </div>
         <span class="line"></span>
-        <p class="light">© 2025 Gotelip Engenharia. Direitos reservados.</p>
+        <p class="light">© 2026 Gotelip Engenharia. Direitos reservados.</p>
         <p class="light footer__dev">
-          Site desenvolvido pela <span><a href="">NOBRK.</a></span>
+          Site desenvolvido pela
+          <span
+            ><a href="https://www.marciordg.com/" target="_blank"
+              >MARCIO RDG.</a
+            ></span
+          >
         </p>
       </div>
     </footer>

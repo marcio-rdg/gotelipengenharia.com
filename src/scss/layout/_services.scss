@@ -1,0 +1,75 @@
+@use '@/scss/config/variables'as *;
+@use '@/scss/config/mixins'as *;
+
+.services {
+    padding: $u8 0;
+
+    &__container {
+        flex-wrap: wrap;
+        gap: $u4;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: $u4;
+        justify-content: center;
+    }
+
+    &__img {
+        flex: 1;
+        display: flex;
+        min-width: 375px;
+
+        &.right {
+            justify-content: end;
+
+            @include respond-to(lg) {
+                justify-content: center;
+            }
+        }
+
+        @include respond-to(lg) {
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            aspect-ratio: 1.5/1;
+            height: fit-content;
+        }
+    }
+
+    &__info {
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    a {
+        flex: 1;
+    }
+
+    &__btns {
+        display: flex;
+        gap: $u3;
+
+        @include respond-to(lg) {
+            flex-direction: column;
+        }
+
+        button {
+            width: 100%;
+
+            &:hover {
+                background-color: var(--primary);
+                color: var(--light);
+            }
+
+            @include respond-to(lg) {
+                width: 100%;
+            }
+
+        }
+    }
+}

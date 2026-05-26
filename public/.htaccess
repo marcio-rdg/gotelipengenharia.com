@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Se o arquivo ou diretório físico existir, acessa ele direto (imagens, fontes, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # Se não existir, joga tudo para o index.html tratar no Front-end
+  RewriteRule ^ index.html [L]
+</IfModule>

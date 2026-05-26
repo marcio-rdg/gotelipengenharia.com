@@ -1,0 +1,43 @@
+@use '@/scss/config/variables'as *;
+@use '@/scss/config/mixins'as *;
+
+.aboutayla {
+    padding: $u8 0;
+
+    &__container {
+        display: flex;
+
+        @include respond-to(md) {
+            flex-direction: column;
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: $u2;
+        justify-content: center;
+        flex: 1;
+    }
+
+    &__list {
+        display: flex;
+        gap: $u6;
+        padding: $u5 0;
+
+        @include respond-to(lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        flex: 1;
+    }
+
+
+    img {
+        width: 100%;
+        padding: $u6;
+    }
+}

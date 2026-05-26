@@ -1,0 +1,46 @@
+@use '@/scss/config/variables'as *;
+@use '@/scss/config/mixins'as *;
+
+.aboutus {
+    padding: $u8 0;
+
+    &__container {
+        text-align: center;
+        flex-direction: column;
+
+        span {
+            background-color: var(--dark);
+            margin: $u6 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        gap: $u6;
+
+        @include respond-to(md) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        @include respond-to(md) {
+            img {
+                max-width: 350px;
+            }
+        }
+    }
+
+    &__texts {
+        flex: 1;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        justify-content: center;
+    }
+}

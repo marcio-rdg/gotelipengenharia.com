@@ -42,6 +42,8 @@
         }
 
         &.active {
+            border: 1px solid var(--secondary);
+
             &::after {
                 content: "-";
             }
@@ -50,6 +52,10 @@
             span {
                 display: block;
             }
+        }
+
+        h3 {
+            font-size: 1.8rem;
         }
     }
 }

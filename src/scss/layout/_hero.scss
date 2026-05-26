@@ -2,13 +2,18 @@
 @use '@/scss/config/mixins'as *;
 
 .hero {
-    background-image: url("../../images/hero-bg-desktop.png");
+    background-image: url("../../images/hero-bg-desktop.webp");
     background-size: cover;
     background-position: center center;
     height: 80vh;
+    max-height: 850px;
 
     @include respond-to(md) {
-        background-image: url("../../images/hero-bg-mobile.png");
+        background-image: url("../../images/hero-bg-mobile.webp");
+    }
+
+    @include respond-to(sm) {
+        background-image: url("../../images/hero-bg-mobile-2.webp");
     }
 
     &__subtitle.dark {

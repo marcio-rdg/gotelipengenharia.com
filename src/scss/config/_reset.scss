@@ -34,7 +34,7 @@ a {
 // Fontes
 @font-face {
     font-family: 'Nunito';
-    src: url('/fonts/Nunito.ttf') format('truetype');
+    src: url('/fonts/Nunito.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -42,7 +42,7 @@ a {
 
 @font-face {
     font-family: 'Nunito';
-    src: url('/fonts/Nunito-Italic.ttf') format('truetype');
+    src: url('/fonts/Nunito-Italic.woff2') format('woff2');
     font-weight: 100 1000;
     font-style: italic;
     font-display: swap;
@@ -50,7 +50,7 @@ a {
 
 @font-face {
     font-family: 'ZenDots';
-    src: url('/fonts/ZenDots.ttf') format('truetype');
+    src: url('/fonts/ZenDots.woff2') format('woff2');
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
@@ -167,4 +167,15 @@ small {
 
 .title {
     text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#content {
+    min-height: 80vh; // Garante que o container ocupe quase a tela toda antes do conteúdo carregar
+    display: block;
 }
